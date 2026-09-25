@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // User profiles
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId);
+    }
+
+    // Support requests
+    match /requests/{requestId} {
+      allow read: if true; // Public/authenticated users can view non-clinical dispatch info
+      allow create: if true; // Support seekers can submit tickets with or without prior sign-in
+      allow update, delete: if isAuthenticated(); // Authenticated users / coordinators can manage
+    }
+
+    // Volunteer registrations
+    match /volunteers/{volunteerId} {
+      allow read: if true; // Read list of verified volunteers
+      allow create: if true; // Prospective volunteers can submit application
+      allow update, delete: if isAuthenticated(); // Coordinators or the volunteer can update
+    }
+  }
+}

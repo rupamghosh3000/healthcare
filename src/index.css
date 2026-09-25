@@ -1,0 +1,280 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #006a6a;
+    --color-primary-container: #00d2d3;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #005556;
+    --color-primary-fixed: #56f9f9;
+    --color-primary-fixed-dim: #26dcdd;
+    --color-on-primary-fixed: #002020;
+    --color-on-primary-fixed-variant: #004f50;
+
+    --color-secondary: #006398;
+    --color-secondary-container: #5bb8fe;
+    --color-on-secondary: #ffffff;
+    --color-on-secondary-container: #00476e;
+    --color-secondary-fixed: #cce5ff;
+    --color-secondary-fixed-dim: #93ccff;
+    --color-on-secondary-fixed: #001d31;
+    --color-on-secondary-fixed-variant: #004b73;
+
+    --color-tertiary: #00687a;
+    --color-tertiary-container: #3ecdec;
+    --color-on-tertiary: #ffffff;
+    --color-on-tertiary-container: #005463;
+    --color-tertiary-fixed: #acedff;
+    --color-tertiary-fixed-dim: #4cd7f6;
+    --color-on-tertiary-fixed: #001f26;
+    --color-on-tertiary-fixed-variant: #004e5c;
+
+    --color-surface: #faf8ff;
+    --color-surface-dim: #d5d9ee;
+    --color-surface-bright: #faf8ff;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f2f3ff;
+    --color-surface-container: #eaedff;
+    --color-surface-container-high: #e3e7fc;
+    --color-surface-container-highest: #dee2f6;
+
+    --color-on-surface: #161b2a;
+    --color-on-surface-variant: #3b4949;
+    --color-inverse-surface: #2b303f;
+    --color-inverse-on-surface: #eef0ff;
+    --color-inverse-primary: #26dcdd;
+
+    --color-outline: #6b7a7a;
+    --color-outline-variant: #bacac9;
+
+    --color-bg-canvas: #F6F8FA;
+    --color-bg-subtle: #F0F4F8;
+    --color-text-primary: #0A0F1D;
+    --color-text-muted: #64748B;
+
+    --color-status-urgent: #F43F5E;
+    --color-status-soon: #F59E0B;
+    --color-status-normal: #10B981;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+
+    --surface-glass: rgba(255, 255, 255, 0.76);
+    --surface-glass-stroke: rgba(255, 255, 255, 0.85);
+    --surface-border: rgba(10, 15, 29, 0.06);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--color-on-surface);
+    background-color: var(--color-bg-canvas);
+  }
+}
+
+/* Custom Typography & Utility Classes matching Stitch Design System */
+.font-display-hero {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.font-display-hero-mobile {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.font-headline-lg {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+.font-headline-sm {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.font-body-lead {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.font-body-default {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.font-label-caps {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.font-tabular-stat {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Backgrounds & Colors aliases */
+.bg-bg-canvas { background-color: #F6F8FA; }
+.bg-bg-subtle { background-color: #F0F4F8; }
+.bg-surface-glass { background-color: rgba(255, 255, 255, 0.78); }
+.bg-surface-container-lowest { background-color: #ffffff; }
+.bg-surface-container-low { background-color: #f2f3ff; }
+.bg-surface-container { background-color: #eaedff; }
+.bg-surface-container-high { background-color: #e3e7fc; }
+.bg-surface-container-highest { background-color: #dee2f6; }
+.bg-surface-dim { background-color: #d5d9ee; }
+
+.bg-primary { background-color: #006a6a; }
+.bg-primary-container { background-color: #00d2d3; }
+.bg-primary-fixed { background-color: #56f9f9; }
+.bg-primary-fixed-dim { background-color: #26dcdd; }
+.bg-on-primary-fixed-variant { background-color: #004f50; }
+
+.bg-secondary { background-color: #006398; }
+.bg-secondary-container { background-color: #5bb8fe; }
+.bg-secondary-fixed { background-color: #cce5ff; }
+
+.bg-text-primary { background-color: #0A0F1D; }
+.bg-status-urgent { background-color: #F43F5E; }
+.bg-status-soon { background-color: #F59E0B; }
+.bg-status-normal { background-color: #10B981; }
+.bg-error { background-color: #ba1a1a; }
+.bg-error-container { background-color: #ffdad6; }
+
+/* Text colors */
+.text-text-primary { color: #0A0F1D; }
+.text-text-muted { color: #64748B; }
+.text-on-surface { color: #161b2a; }
+.text-on-surface-variant { color: #3b4949; }
+.text-primary { color: #006a6a; }
+.text-on-primary { color: #ffffff; }
+.text-on-primary-container { color: #005556; }
+.text-primary-fixed { color: #56f9f9; }
+.text-secondary { color: #006398; }
+.text-on-secondary { color: #ffffff; }
+.text-on-secondary-fixed { color: #001d31; }
+.text-on-secondary-fixed-variant { color: #004b73; }
+.text-status-urgent { color: #F43F5E; }
+.text-status-soon { color: #F59E0B; }
+.text-status-normal { color: #10B981; }
+.text-outline { color: #6b7a7a; }
+.text-outline-variant { color: #bacac9; }
+.text-error { color: #ba1a1a; }
+.text-on-error { color: #ffffff; }
+.text-on-error-container { color: #93000a; }
+
+/* Border colors & styles */
+.border-surface-border { border-color: rgba(10, 15, 29, 0.08); }
+.border-outline-variant { border-color: #bacac9; }
+
+/* Spacing tokens */
+.px-margin { padding-left: 2.5rem; padding-right: 2.5rem; }
+.px-margin-mobile { padding-left: 1.25rem; padding-right: 1.25rem; }
+.p-space-xs { padding: 0.25rem; }
+.p-space-sm { padding: 0.5rem; }
+.p-space-md { padding: 1rem; }
+.p-space-lg { padding: 1.5rem; }
+.p-space-xl { padding: 2.5rem; }
+.p-space-2xl { padding: 4rem; }
+.gap-space-xs { gap: 0.25rem; }
+.gap-space-sm { gap: 0.5rem; }
+.gap-space-md { gap: 1rem; }
+.gap-space-lg { gap: 1.5rem; }
+.gap-space-xl { gap: 2.5rem; }
+.gap-space-2xl { gap: 4rem; }
+.gap-gutter { gap: 1.5rem; }
+.py-space-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-space-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-space-md { padding-top: 1rem; padding-bottom: 1rem; }
+.py-space-lg { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-space-xl { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.py-space-2xl { padding-top: 4rem; padding-bottom: 4rem; }
+.mt-space-xs { margin-top: 0.25rem; }
+.mt-space-sm { margin-top: 0.5rem; }
+.mt-space-md { margin-top: 1rem; }
+.mt-space-lg { margin-top: 1.5rem; }
+.mt-space-xl { margin-top: 2.5rem; }
+.mt-space-2xl { margin-top: 4rem; }
+.pb-space-xs { padding-bottom: 0.25rem; }
+.pb-space-sm { padding-bottom: 0.5rem; }
+.pb-space-md { padding-bottom: 1rem; }
+.pb-space-lg { padding-bottom: 1.5rem; }
+.pb-space-xl { padding-bottom: 2.5rem; }
+.pb-space-2xl { padding-bottom: 4rem; }
+
+/* Custom Radius */
+.rounded-DEFAULT { border-radius: 1rem; }
+.rounded-lg { border-radius: 2rem; }
+.rounded-xl { border-radius: 3rem; }
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

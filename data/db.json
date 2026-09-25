@@ -1,0 +1,320 @@
+{
+  "nextRequestId": 1046,
+  "nextVolunteerId": 412,
+  "users": [
+    {
+      "id": "admin-1",
+      "email": "admin@careconnect.org",
+      "passwordHash": "$2b$10$0jIK206CvUZ22ekqsRax5OBk/XYjhhL1AHWSaUsPGy/BTcSSzHp8q",
+      "name": "Chief Coordinator Sarah",
+      "role": "admin"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "General",
+      "question": "What kind of support can I request?",
+      "answer": "You can request non-clinical community support such as hospital accompaniment (sitting with you, ambulatory check-in navigation, pharmacy collection), non-emergency transportation to and from scheduled appointments, elderly assistance (grocery pickup, check-ins), and door-to-door mobility guidance."
+    },
+    {
+      "id": "faq-2",
+      "category": "Volunteering",
+      "question": "How can I become a volunteer?",
+      "answer": "You can navigate to the Volunteer Portal, complete the short registration form with your preferred service categories, weekly availability windows, and municipal zone. Our district coordinators conduct an identity verification and onboarding review within 24 hours."
+    },
+    {
+      "id": "faq-3",
+      "category": "Transportation",
+      "question": "Can I request transportation help?",
+      "answer": "Yes! Vetted volunteers offer rides to non-urgent medical checkups, clinic consultations, and pharmacy pickups. However, CareConnect is not an ambulance service; if emergency transport or paramedic life support is required, dial 911 immediately."
+    },
+    {
+      "id": "faq-4",
+      "category": "Process",
+      "question": "How does the support request process work?",
+      "answer": "1. You submit your request via our simple form. 2. Our deterministic AI intake engine structures and summarizes your logistics (time, location, mobility aids needed) without touching sensitive health records. 3. Municipal coordinators review and pair your request with vetted neighborhood volunteers within 45 minutes."
+    },
+    {
+      "id": "faq-5",
+      "category": "Emergency & Safety",
+      "question": "Is CareConnect an emergency medical service?",
+      "answer": "NO. CareConnect is strictly for non-emergency civil healthcare navigation and neighborly community aid. CareConnect volunteers do not prescribe medications, diagnose conditions, or provide invasive care. For any acute or life-threatening crisis, call 911 immediately."
+    },
+    {
+      "id": "faq-6",
+      "category": "Process",
+      "question": "What happens after I submit a request?",
+      "answer": "You receive an instant reference ID (e.g. CC-1042) and an interactive synthesis summary. A local coordinator verifies volunteer availability in your sector, matches an accredited caregiver, and updates you via SMS and email confirmation."
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "VOL-401",
+      "name": "Marcus Chen",
+      "email": "marcus.chen@carenetwork.org",
+      "phone": "(555) 439-0129",
+      "city": "Metro District 4, North Hills",
+      "supportAreas": [
+        "Transportation",
+        "Hospital Companion",
+        "Elderly Assistance"
+      ],
+      "availability": [
+        "Weekdays",
+        "Morning (8am - 12pm)",
+        "Afternoon (12pm - 5pm)"
+      ],
+      "experience": "CPR / Basic Life Support certified",
+      "introNote": "Retired physical therapist assistant with flexible weekday mornings.",
+      "status": "Active",
+      "rating": 5,
+      "missionsCompleted": 48,
+      "createdAt": "2026-07-27T16:13:49.706Z"
+    },
+    {
+      "id": "VOL-402",
+      "name": "Alice Reynolds",
+      "email": "alice.reynolds@civicaid.org",
+      "phone": "(555) 872-9011",
+      "city": "West Health District #04",
+      "supportAreas": [
+        "Hospital Companion",
+        "Accessibility Aid"
+      ],
+      "availability": [
+        "Weekends",
+        "Morning (8am - 12pm)"
+      ],
+      "experience": "Retired nurse or healthcare professional",
+      "introNote": "Registered nurse (retired) wishing to give comfort to outpatient visitors.",
+      "status": "Active",
+      "rating": 4.9,
+      "missionsCompleted": 42,
+      "createdAt": "2026-08-11T16:13:49.707Z"
+    },
+    {
+      "id": "VOL-403",
+      "name": "David Kim",
+      "email": "david.kim@metro.org",
+      "phone": "(555) 302-8841",
+      "city": "Metro District 2, South Park",
+      "supportAreas": [
+        "Transportation",
+        "General Support"
+      ],
+      "availability": [
+        "Weekdays",
+        "Evening (5pm - 9pm)"
+      ],
+      "experience": "Active community organizer / Neighborhood watch",
+      "introNote": "Have reliable 4-door vehicle equipped with accessible seating.",
+      "status": "Active",
+      "rating": 4.8,
+      "missionsCompleted": 29,
+      "createdAt": "2026-08-26T16:13:49.707Z"
+    },
+    {
+      "id": "VOL-404",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@carenet.org",
+      "phone": "(555) 914-2200",
+      "city": "Central District 1",
+      "supportAreas": [
+        "Elderly Assistance",
+        "Companion Support"
+      ],
+      "availability": [
+        "Weekends",
+        "Afternoon (12pm - 5pm)"
+      ],
+      "experience": "Nursing / Pre-Med / Paramedic student",
+      "introNote": "2nd year nursing student fluent in English and Ukrainian.",
+      "status": "Approved",
+      "rating": 5,
+      "missionsCompleted": 14,
+      "createdAt": "2026-09-10T16:13:49.707Z"
+    },
+    {
+      "id": "VOL-405",
+      "name": "Jamal Washington",
+      "email": "jamal.w@communitymail.org",
+      "phone": "(555) 604-3321",
+      "city": "East District 3",
+      "supportAreas": [
+        "Transportation",
+        "Accessibility Aid"
+      ],
+      "availability": [
+        "Weekdays",
+        "Morning (8am - 12pm)"
+      ],
+      "experience": "CPR / Basic Life Support certified",
+      "introNote": "Comfortable aiding seniors with foldable walkers.",
+      "status": "Pending",
+      "rating": 0,
+      "missionsCompleted": 0,
+      "createdAt": "2026-09-23T16:13:49.707Z"
+    }
+  ],
+  "requests": [
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "(555) 123-4567",
+      "category": "Transportation",
+      "preferredDate": "Tomorrow",
+      "preferredTime": "Morning (10:00 AM)",
+      "location": "County Health Center",
+      "description": "Need a ride home from physical therapy session after knee surgery.",
+      "urgency": "normal",
+      "status": "Pending",
+      "id": "CC-1045",
+      "createdAt": "2026-09-25T16:14:05.273Z",
+      "updatedAt": "2026-09-25T16:14:06.790Z",
+      "aiSummary": {
+        "category": "Transportation",
+        "requirement": "Need a ride home from physical therapy session after knee surgery.",
+        "date": "Tomorrow",
+        "time": "Morning (10:00 AM)",
+        "location": "County Health Center",
+        "priority": "Normal",
+        "zoneMatch": "West Health District #04",
+        "notes": "Parsed via deterministic intake validator."
+      }
+    },
+    {
+      "id": "CC-1042",
+      "name": "Eleanor Vance",
+      "email": "eleanor.vance@example.org",
+      "phone": "(555) 234-8901",
+      "category": "Hospital Companion",
+      "preferredDate": "Tomorrow",
+      "preferredTime": "10:00 AM",
+      "location": "City Hospital, West Wing (Entrance Gate 3)",
+      "description": "Someone to accompany the patient through ambulatory check-in, waiting room transitions, and pharmacy collection.",
+      "urgency": "normal",
+      "status": "Reviewing",
+      "aiSummary": {
+        "category": "Hospital Companion",
+        "requirement": "Someone to accompany the patient through ambulatory check-in, waiting room transitions, and pharmacy collection.",
+        "date": "Tomorrow",
+        "time": "10:00 AM",
+        "location": "City Hospital, West Wing",
+        "priority": "Normal",
+        "zoneMatch": "West Health District #04",
+        "notes": "Wheelchair assistance ready; English speaker; Check-in: 15m prior."
+      },
+      "assignedVolunteerId": "VOL-402",
+      "assignedVolunteerName": "Alice Reynolds",
+      "createdAt": "2026-09-25T15:38:49.707Z",
+      "updatedAt": "2026-09-25T15:58:49.707Z"
+    },
+    {
+      "id": "CC-1041",
+      "name": "Arthur Pendelton",
+      "email": "arthur.p@outlook.com",
+      "phone": "(555) 789-1029",
+      "category": "Transportation",
+      "preferredDate": "Today",
+      "preferredTime": "2:30 PM",
+      "location": "Mercy Diagnostic Pavilion, Suite 200",
+      "description": "Need a ride back home after cataract surgery dilation. Cannot drive for 4 hours.",
+      "urgency": "soon",
+      "status": "Volunteer Assigned",
+      "aiSummary": {
+        "category": "Transportation",
+        "requirement": "Post-cataract procedure patient pickup and safe escort to residence.",
+        "date": "Today",
+        "time": "2:30 PM",
+        "location": "Mercy Diagnostic Pavilion",
+        "priority": "Soon",
+        "zoneMatch": "Central District 1",
+        "notes": "Vision impaired temporarily from pupil dilation; sunglasses needed."
+      },
+      "assignedVolunteerId": "VOL-401",
+      "assignedVolunteerName": "Marcus Chen",
+      "createdAt": "2026-09-25T13:13:49.707Z",
+      "updatedAt": "2026-09-25T14:43:49.707Z"
+    },
+    {
+      "id": "CC-1040",
+      "name": "Lillian Zhao",
+      "email": "lillian.z@gmail.com",
+      "phone": "(555) 441-9920",
+      "category": "Elderly Support",
+      "preferredDate": "2026-09-27",
+      "preferredTime": "Morning (9:00 AM)",
+      "location": "Oakridge Senior Living Apt 4B",
+      "description": "Help picking up bi-weekly maintenance heart prescriptions from Walgreens and carrying grocery bags.",
+      "urgency": "normal",
+      "status": "Pending",
+      "aiSummary": {
+        "category": "Elderly Support",
+        "requirement": "Prescription pickup and grocery assistance for senior resident.",
+        "date": "2026-09-27",
+        "time": "9:00 AM",
+        "location": "Oakridge Senior Living",
+        "priority": "Normal",
+        "zoneMatch": "Metro District 4, North Hills",
+        "notes": "Two light bags. Contact reception for gate code."
+      },
+      "createdAt": "2026-09-25T10:13:49.707Z",
+      "updatedAt": "2026-09-25T10:13:49.707Z"
+    },
+    {
+      "id": "CC-1039",
+      "name": "Marcus Brody",
+      "email": "mbrody@univ.edu",
+      "phone": "(555) 902-1144",
+      "category": "Accessibility Assistance",
+      "preferredDate": "2026-09-26",
+      "preferredTime": "11:00 AM",
+      "location": "University Orthopedic Rehab Clinic",
+      "description": "Recent ankle fracture surgery, need assistance with crutches navigating steep stairs at clinic entrance.",
+      "urgency": "urgent",
+      "status": "In Progress",
+      "aiSummary": {
+        "category": "Accessibility Assistance",
+        "requirement": "Physical guiding assistance navigating multi-story clinic entrance on crutches.",
+        "date": "2026-09-26",
+        "time": "11:00 AM",
+        "location": "University Orthopedic Rehab Clinic",
+        "priority": "Urgent",
+        "zoneMatch": "Metro District 2, South Park",
+        "notes": "Requires patient, steady physical support."
+      },
+      "assignedVolunteerId": "VOL-403",
+      "assignedVolunteerName": "David Kim",
+      "createdAt": "2026-09-25T04:13:49.707Z",
+      "updatedAt": "2026-09-25T14:13:49.707Z"
+    },
+    {
+      "id": "CC-1038",
+      "name": "Carlos Mendoza",
+      "email": "carlos.m@health.org",
+      "phone": "(555) 512-8899",
+      "category": "Companion Support",
+      "preferredDate": "2026-09-24",
+      "preferredTime": "1:00 PM",
+      "location": "Saint Jude Memorial Outpatient",
+      "description": "Senior father feels anxious sitting alone in oncology waiting room; requested friendly Spanish-speaking presence.",
+      "urgency": "normal",
+      "status": "Completed",
+      "aiSummary": {
+        "category": "Companion Support",
+        "requirement": "Bedside waiting room presence and conversation in Spanish.",
+        "date": "2026-09-24",
+        "time": "1:00 PM",
+        "location": "Saint Jude Memorial Outpatient",
+        "priority": "Normal",
+        "zoneMatch": "Central District 1",
+        "notes": "Companion mission completed with volunteer Elena Rostova."
+      },
+      "assignedVolunteerId": "VOL-404",
+      "assignedVolunteerName": "Elena Rostova",
+      "createdAt": "2026-09-24T10:13:49.707Z",
+      "updatedAt": "2026-09-25T11:13:49.707Z"
+    }
+  ]
+}

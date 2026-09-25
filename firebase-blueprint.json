@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Registered user profile with Google Authentication",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["patient", "volunteer", "coordinator", "admin"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "SupportRequest": {
+      "title": "SupportRequest",
+      "description": "A civilian healthcare navigation support ticket",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "category": { "type": "string" },
+        "preferredDate": { "type": "string" },
+        "preferredTime": { "type": "string" },
+        "location": { "type": "string" },
+        "description": { "type": "string" },
+        "urgency": { "type": "string", "enum": ["normal", "soon", "urgent"] },
+        "status": { "type": "string", "enum": ["Pending", "Reviewing", "Volunteer Assigned", "In Progress", "Completed", "Cancelled"] },
+        "aiSummary": { "type": "object" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "email", "category", "description", "urgency", "status"]
+    },
+    "Volunteer": {
+      "title": "Volunteer",
+      "description": "Vetted community volunteer profile",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "city": { "type": "string" },
+        "supportAreas": { "type": "array" },
+        "availability": { "type": "array" },
+        "experience": { "type": "string" },
+        "introNote": { "type": "string" },
+        "status": { "type": "string", "enum": ["Pending", "Approved", "Active", "Inactive"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "email", "phone", "city", "supportAreas", "availability"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profiles indexed by Firebase Auth UID"
+    },
+    "/requests/{requestId}": {
+      "schema": { "$ref": "#/entities/SupportRequest" },
+      "description": "Public and user-created care navigation requests"
+    },
+    "/volunteers/{volunteerId}": {
+      "schema": { "$ref": "#/entities/Volunteer" },
+      "description": "Registered volunteer applications and profiles"
+    }
+  }
+}

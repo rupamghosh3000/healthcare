@@ -1,0 +1,8 @@
+{
+  "name": "CareConnect",
+  "description": "Compassionate non-emergency healthcare navigation, AI-synthesized support request dispatch, and municipal volunteer network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
